@@ -17,7 +17,10 @@
         <h3>Available Activities</h3>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
+          <div class="loading">
+            <img src="https://octodex.github.com/images/Professortocat_v2.png" alt="Loading activities" />
+            <span>Loading activities...</span>
+          </div>
         </div>
       </section>
 
@@ -38,6 +41,15 @@
           <button type="submit">Sign Up</button>
         </form>
         <div id="message" class="hidden"></div>
+
+        <!-- Agent mode info -->
+        <aside class="info" aria-labelledby="agent-mode-title">
+          <details>
+            <summary id="agent-mode-title">What is Agent mode?</summary>
+            <p>Agent mode lets GitHub Copilot plan tasks, propose edits, and run actions with your approval. You stay in control at every step.</p>
+            <p><a href="https://docs.github.com/copilot" target="_blank" rel="noopener">Learn more</a></p>
+          </details>
+        </aside>
       </section>
     </main>
 
